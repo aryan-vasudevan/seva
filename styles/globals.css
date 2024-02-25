@@ -1,33 +1,71 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+* {
+   font-family: "Archivo Black", sans-serif;
+   scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+html {
+   background-image: linear-gradient(#FFECBC, #6A60A4);
+   background-repeat: no-repeat;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+html::-webkit-scrollbar {
+   display: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+::selection {
+   background: #554C89;
+   color: white;
+ }
+
+
+h1 {
+   font-size: 80px;
+   letter-spacing: -3px;
+   font-weight: bold;
+}
+
+
+h2 {
+   font-size: 2.5em;
+   letter-spacing: -1px;
+}
+
+
+h3 {
+   font-size: 26px;
+}
+
+
+p {
+   font-size: 20px;
+}
+
+
+.ReactCollapse--collapse {
+   transition: all 500ms;
+}
+
+
+a {
+   color: #6A60A4;
+   transition: all ease-in-out;
+   transition-duration: 200ms;
+}
+
+
+a:hover {
+   color: #554C89;
+}
+
+
+button {
+   user-select: none;
 }
