@@ -42,6 +42,7 @@ export default function Navbar () {
                    <Link
                        key={id}
                        href={link}
+                       
                        className="hover:bg-black/75 text-white mx-4 px-4 py-4 my-auto transition-all rounded-lg hover:text-theme-blue duration-300"
                    >
                        {name}
