@@ -15,11 +15,6 @@ const links = [
        link: "/discover",
        id: "1",
    },
-   {
-       name: "About",
-       link: "/about",
-       id: "2",
-   },
 ];
 
 export default function Navbar () {
