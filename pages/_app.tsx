@@ -13,6 +13,6 @@ function App ({ Component, pageProps }: AppProps) {
             </Layout>
         </div>
     )
-}
+}   
 
 export default App;
