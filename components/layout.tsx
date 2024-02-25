@@ -62,12 +62,13 @@ export default function Layout ({ children }: { children: ReactNode }) {
                </div>
                <AnimatedCursor
                    innerSize={0}
-                   outerSize={8}
+                   outerSize={10}
                    outerAlpha={0.2}
                    outerScale={4}
-                   trailingSpeed={2}
+                   trailingSpeed={3}
                    color='255, 255, 255'
                    showSystemCursor={false}
+                    
                />
            </div>
        </div>
