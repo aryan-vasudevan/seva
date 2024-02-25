@@ -55,7 +55,7 @@ export default function Layout ({ children }: { children: ReactNode }) {
                <div
                    className="relative h-full w-full"
                >
-                <div className="absolute">
+                <div className="absolute z-50">
                     <Navbar />
                 </div> 
                     {children}
