@@ -9,13 +9,11 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         const roleName = req.body.roleName;
         const description = req.body.description;
 
-        const firstName = req.body.firstName;
-        const lastName = req.body.lastName;
         const email = req.body.email;
         const phone = req.body.phone;
         const city = req.body.city;
 
-        if (!organization || !roleName || !description || !firstName || !lastName || !email || !phone || !city) {
+        if (!organization || !roleName || !description || !email || !phone || !city) {
             return res.status(400).json({ error: "Please fill in all required fields." });
         }
 
