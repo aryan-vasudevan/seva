@@ -12,7 +12,7 @@ const links = [
        id: "0",
    },
    {
-       name: "Discovery",
+       name: "Discover",
        link: "/discover",
        id: "1",
    },

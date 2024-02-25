@@ -65,7 +65,7 @@ export default function Layout ({ children }: { children: ReactNode }) {
                    outerSize={10}
                    outerAlpha={0.2}
                    outerScale={4}
-                   trailingSpeed={3}
+                   trailingSpeed={2}
                    color='255, 255, 255'
                    showSystemCursor={false}
                     
