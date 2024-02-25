@@ -3,6 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 // Define the handler function
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+    
     if (req.method === "GET") {
         try {
             const client = await clientPromise;

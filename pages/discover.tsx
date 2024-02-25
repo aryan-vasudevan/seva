@@ -6,10 +6,15 @@ export default function Discover() {
     const router = useRouter();
     const [documents, setDocuments] = useState<any[]>([]);
 
+    const [organization, setOrganization] = useState('');
+    const [roleName, setRoleName] = useState('');
+    const [description, setDescription] = useState('');
+    const [city, setCity] = useState('');
+
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`/api/get-roles`, {})
+                const response = await axios.get(`/api/get-roles`, { /*params: { organization: organization, roleName: roleName, description: description, city: city  } */})
                 // console.log('get roles')
                 const responseData = response.data;
                 console.log(response);
