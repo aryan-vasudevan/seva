@@ -10,12 +10,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         const description = req.body.description;
 
         const email = req.body.email;
-        const phone = req.body.phone;
+        const phoneNumber = req.body.phoneNumber;
         const city = req.body.city;
 
-        if (!organization || !roleName || !description || !email || !phone || !city) {
-            return res.status(400).json({ error: "Please fill in all required fields." });
-        }
+        console.log(data);
+
+        // if (!organization || !roleName || !description || !email || !phoneNumber || !city) {
+        //     return res.status(400).json({ error: "Please fill in all required fields." });
+        // }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
@@ -24,10 +26,11 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
         try {
             const client = await clientPromise;
-            const db = client.db();
+            const db = client.db("seva");
             const collection = db.collection("opportunities");
 
             collection.insertOne(data);
+            return res.status(201).json({ message: "Successfully created opportunity." })
 
         } catch (error) {
             return res.status(500).json({ error: "Internal server error." })

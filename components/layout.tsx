@@ -42,24 +42,19 @@ export default function Layout ({ children }: { children: ReactNode }) {
    return (
        <div /*ref={ref}*/ className="">
            <Head>
-               <link rel="icon" href="/favicon/favicon.ico" />
+               {/* <link rel="icon" href="/favicon/favicon.ico" /> */}
                <style>
                    @import url(https://fonts.googleapis.com/css2?family=Outfit&family=Archivo+Black&display=swap);
                </style>
            </Head>
 
-           <div className="w-full overflow-hidden relative grid place-items-center"
-           >
-               <div
-                   className="relative h-full w-full"
-               >
-                <div 
-                className="absolute z-50"
-                >
-                    <Navbar />
-                </div> 
+           <div className="w-full relative grid place-items-center">
+                <div className="relative h-full w-full">
+                    <div className="absolute z-50">
+                        <Navbar />
+                    </div> 
                     {children}
-               </div>
+                </div>
                <AnimatedCursor
                    innerSize={0}
                    outerSize={10}
@@ -68,7 +63,6 @@ export default function Layout ({ children }: { children: ReactNode }) {
                    trailingSpeed={2}
                    color='255, 255, 255'
                    showSystemCursor={false}
-                    
                />
            </div>
        </div>
