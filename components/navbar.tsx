@@ -6,7 +6,7 @@ import { useState } from "react";
 
 
 const links = [
-   {
+   {    
        name: "Home",
        link: "/",
        id: "0",
@@ -66,8 +66,7 @@ export default function Navbar () {
                        )}
                    </div>
                }
-              
-           </div>
-       </div>
-   );
-}
+            </div>
+        </div>
+        )
+    }
