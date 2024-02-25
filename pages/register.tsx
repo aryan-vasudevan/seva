@@ -16,7 +16,7 @@ export default function Register() {
     const handleSubmit = (e: any) => {
 
     }
-
+    
     return (
         <div className="min-h-screen bg-black">
             <div className="h-screen w-full flex flex-col place-items-center justify-evenly">
