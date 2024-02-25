@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import AnimatedCursor from "react-animated-cursor";
 
 
+
 function getNames (routerPathname: string) {
    let pageTitle;
    let bgImageName;
