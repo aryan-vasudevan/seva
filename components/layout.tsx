@@ -6,7 +6,6 @@ import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 import AnimatedCursor from "react-animated-cursor";
 
-
 function getNames (routerPathname: string) {
    let pageTitle;
    let bgImageName;
@@ -54,13 +53,13 @@ export default function Layout ({ children }: { children: ReactNode }) {
                    className="relative h-full w-full"
                >
                 <div 
-                className="absolute z-50"
+                className="relative z-50 "
                 >
                     <Navbar />
                 </div> 
                     {children}
                </div>
-               <AnimatedCursor
+               {/* <AnimatedCursor
                    innerSize={0}
                    outerSize={10}
                    outerAlpha={0.2}
@@ -69,7 +68,7 @@ export default function Layout ({ children }: { children: ReactNode }) {
                    color='255, 255, 255'
                    showSystemCursor={false}
                     
-               />
+               /> */}
            </div>
        </div>
       

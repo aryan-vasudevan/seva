@@ -48,6 +48,11 @@ p {
    font-size: 20px;
 }
 
+input {
+   color: black;
+   background-color: black;
+}
+
 
 .ReactCollapse--collapse {
    transition: all 500ms;
