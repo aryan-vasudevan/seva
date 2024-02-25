@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
 
 
 ::selection {
-   background: #554C89;
+   background: #6997c4;
    color: white;
  }
 
@@ -55,14 +55,14 @@ p {
 
 
 a {
-   color: #6A60A4;
+   color: #89A8C6;
    transition: all ease-in-out;
    transition-duration: 200ms;
 }
 
 
 a:hover {
-   color: #554C89;
+   color: #6997c4;
 }
 
 

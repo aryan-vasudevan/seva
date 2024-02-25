@@ -1,11 +1,9 @@
 "use client"
 
 import { ReactNode, useRef } from "react";
-// import { motion, useScroll, useTransform } from "framer-motion";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
-// import AiVolutionLogo from '../public/aivolution-logo.png';
 import AnimatedCursor from "react-animated-cursor";
 
 
