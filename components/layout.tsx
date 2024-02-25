@@ -48,18 +48,19 @@ export default function Layout ({ children }: { children: ReactNode }) {
                </style>
            </Head>
 
-           <div className="w-full overflow-hidden relative grid place-items-center"
-           >
-               <div
-                   className="relative h-full w-full"
-               >
-                <div 
-                className="absolute z-50"
-                >
+        <div className="w-full overflow-hidden relative grid place-items-center">
+            <div className="relative w-full">
+                <div className="relative z-50">
                     <Navbar />
-                </div> 
+                </div>
+                <h1 className="text-center z-0 absolute opacity-20 text-aqua text-[30em] select-none">
+                        SEVA
+                    </h1>
+                <div className="overflow-y-scroll h-full">
                     {children}
-               </div>
+                </div>
+            </div>
+        </div>
                <AnimatedCursor
                    innerSize={0}
                    outerSize={10}
@@ -71,8 +72,7 @@ export default function Layout ({ children }: { children: ReactNode }) {
                     
                />
            </div>
-       </div>
-      
+       
       
    )
 }
