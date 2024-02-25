@@ -4,7 +4,6 @@ import Image from "next/image";
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
 
-
 const links = [
    {    
        name: "Home",
@@ -16,12 +15,15 @@ const links = [
        link: "/discover",
        id: "1",
    },
+   {
+       name: "About",
+       link: "/about",
+       id: "2",
+   },
 ];
-
 
 export default function Navbar () {
    const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
-
 
    return (
        <div className="font-bold flex justify-between w-screen bg-black xs:py-1">
@@ -34,7 +36,6 @@ export default function Navbar () {
                        className="rounded-lg "
                    />
                </Link>
-              
            </div>
            <div className="my-auto xs:hidden">
                {links.map(({ name, link, id }) =>
@@ -54,11 +55,8 @@ export default function Navbar () {
                    Register
                </Link>
            </div>
-          
            <div className="my-auto mx-2 hidden xs:block text-beige rounded-xl z-20">
                <IoIosMenu className="inline m-2 hover:cursor-pointer" size={40} onClick={() => {setDropdownIsOpen(!dropdownIsOpen)}}/>
-
-
                {dropdownIsOpen &&
                    <div className="flex flex-col absolute top-[5.5rem] right-[0.5rem] w-[120px] rounded-lg bg-white border-light-purple text-right">
                        {links.map(({name, link, id}) =>
@@ -68,5 +66,5 @@ export default function Navbar () {
                }
             </div>
         </div>
-        )
-    }
+    )
+}
